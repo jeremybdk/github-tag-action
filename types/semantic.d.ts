@@ -35,7 +35,8 @@ declare module '@semantic-release/release-notes-generator' {
             release: string;
             scope?: string;
           }[];
-      presetConfig?: string;
+      presetConfig: {"types": [{ "type": "chore", "hidden": false, "section": "chore"}]
+      }
     },
     args: {
       commits: { message: string; hash: string | null }[];
